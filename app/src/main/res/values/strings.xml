@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ChitChat</string>
+    <string name="stringClass">Username</string>
+    <string name="password">Password</string>
+    <string name="displayname">DisplayName</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="register">Register</string>
+    <string name="already_registered_click_here_to_login">Already registered? click here to login</string>
+    <string name="sign_in">Sign in</string>
+    <string name="settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="want_to_chitchat">Want to ChitChat?</string>
+    <string name="chit_chat">ChitChat</string>
+    <string name="preference_file_key">com.example.chitchat</string>
+    <string name="url_characters">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._~:/?#[]@!$&amp;\'()*+,;=</string>
+    <string name="BaseUrl">http://10.0.2.2:5000/</string>
+    <string name="lorem_impsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat luctus mauris, id eleifend nulla ultrices non. Aenean quis malesuada sapien. Maecenas nec sollicitudin ex. Vestibulum sit amet pulvinar nibh. Nullam lectus massa, auctor sed sem id, tincidunt porttitor quam. Suspendisse non auctor quam. Phasellus eget iaculis risus, rhoncus tristique nisl.</string>
+    <string name="note">Note that changing the URL Address while logged-in will result in a logout</string>
+    <string name="logo">Logo</string>
+</resources>

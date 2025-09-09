@@ -1,0 +1,85 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    /* flex-wrap: nowrap; */
+    width: 100%;
+}
+
+.col {
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+
+    /* height: 100%;
+    width: 100%; */
+}
+
+#contacts {
+    flex: 1;
+    overflow-y: auto;
+    height: 84vh;
+}
+
+.dialog {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    height: 85vh;
+    flex-wrap: nowrap;
+}
+
+.message-text-left {
+    text-align: left;
+}
+
+.message-text-right {
+    text-align: right;
+}
+
+#chat_container {
+    display: flex;
+    flex: 1 1;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+#input {
+    display: flex;
+    flex: 0 1;
+    margin: 0 12px;
+}
+
+.contacts-card {
+    display: flex;
+    justify-content: flex-start
+}
+
+#add-contact:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+    width: 60px; 
+    height: 60px;  
+    margin-right: 10px;
+}
+  
+.image-container img {
+    width: 100%; 
+    height: 100%; 
+}
+
+.user-name {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.glow {
+    text-shadow: 0px 0px 5px #009dff;
+    color: #084298!important;
+}

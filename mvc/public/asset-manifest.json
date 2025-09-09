@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.16d4619c.css",
+    "main.js": "/static/js/main.c831277c.js",
+    "static/js/787.233d6348.chunk.js": "/static/js/787.233d6348.chunk.js",
+    "static/media/logoChitChat.png": "/static/media/logoChitChat.f57276f0625c90381e0c.png",
+    "index.html": "/index.html",
+    "main.16d4619c.css.map": "/static/css/main.16d4619c.css.map",
+    "main.c831277c.js.map": "/static/js/main.c831277c.js.map",
+    "787.233d6348.chunk.js.map": "/static/js/787.233d6348.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16d4619c.css",
+    "static/js/main.c831277c.js"
+  ]
+}

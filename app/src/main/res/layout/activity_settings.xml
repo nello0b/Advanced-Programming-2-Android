@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/background">
+
+    <include layout="@layout/custom_action_bar_main_no_settings"
+        android:id="@+id/action_bar"/>
+
+    <ScrollView
+        android:layout_below="@id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_below="@id/action_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <TextView
+                style="@style/textColor"
+                android:id="@+id/tvSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:text="@string/settings"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                style="@style/textColor"
+                android:id="@+id/tvHttp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSetting"
+                android:layout_marginStart="10dp"
+                android:gravity="start"
+                android:text="Server URL Address:"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:inputType="textUri"
+                android:digits="@string/url_characters"
+                android:id="@+id/edHttp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHttp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/light_blue"
+                android:drawableStart="@drawable/ic_http"
+                android:drawablePadding="20dp"
+                android:hint="Server URL Address"
+                android:padding="20dp"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/dark_blue" />
+            <TextView
+                style="@style/textColor"
+                android:id="@+id/tvTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edHttp"
+                android:layout_marginStart="10dp"
+                android:gravity="start"
+                android:text="Theme:"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTheme"
+                android:padding="20dp">
+
+                <RadioButton
+                    style="@style/textColor"
+                    android:id="@+id/rbLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Light"
+                    android:tag="1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    style="@style/textColor"
+                    android:id="@+id/rbDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark"
+                    android:tag="2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+
+            <TextView
+                style="@style/textColor"
+                android:id="@+id/tvWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rgTheme"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:text="@string/note"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:background="@drawable/note_background"
+                />
+
+            <Button
+                style="@style/primaryButton"
+                android:id="@+id/btnApply"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/tvWarning"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Apply"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
