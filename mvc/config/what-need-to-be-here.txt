@@ -1,0 +1,29 @@
+Please create a file in this folder called:
+
+advanced-programming-2-android-firebase-adminsdk-<SOMETHING>.json
+
+This file must NOT be committed to Git. It is ignored by .gitignore.
+
+The content of the file should look like this (replace all placeholders with the real values you get from Google Cloud when creating a Service Account key):
+
+{
+  "type": "service_account",
+  "project_id": "<YOUR_GCP_PROJECT_ID>",
+  "private_key_id": "<PRIVATE_KEY_ID>",
+  "private_key": "-----BEGIN PRIVATE KEY-----\n<YOUR_PRIVATE_KEY>\n-----END PRIVATE KEY-----\n",
+  "client_email": "<SERVICE_ACCOUNT_EMAIL>@<PROJECT_ID>.iam.gserviceaccount.com",
+  "client_id": "<CLIENT_ID>",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/<SERVICE_ACCOUNT_EMAIL_URL_ENCODED>",
+  "universe_domain": "googleapis.com"
+}
+
+Before deployment:
+1. Go to Google Cloud Console → IAM & Admin → Service Accounts.
+2. Create or select a Service Account for Firebase.
+3. Under "Keys", generate a new JSON key and download it.
+4. Place that JSON in this folder with the correct filename.
+5. Make sure GOOGLE_APPLICATION_CREDENTIALS is set to point to that file in your local machine or in your server/CI environment.
+6. Do not push the real JSON file to GitHub — only this instruction file stays in the repo.

@@ -1,0 +1,43 @@
+.containerBackground {
+    margin-top: 4%;
+    width: 100%;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.containerBackground .rowMargin {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.containerBackground img {
+    height: 100px;
+    width: 150px;
+}
+
+.containerBackground button {
+    width: 200px;
+}
+
+.containerBackground label {
+    font-weight: bold;
+}
+
+/* Custom label styles */
+.containerBackground .custom-label {
+    color: #457b9d;
+    /* Set label color */
+}
+
+/* Custom link styles */
+.containerBackground .custom-link {
+    text-decoration: underline;
+    color: #457B9D;
+    /* Set link color */
+}
+
+.containerBackground .error-span {
+    color: red;
+    font-weight: bold;
+}

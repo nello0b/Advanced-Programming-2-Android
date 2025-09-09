@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/background">
+
+    <!-- Action Bar -->
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/custom_action_bar_my_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <!-- Message List -->
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar"
+        android:layout_above="@id/inputLayout"> -->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/action_bar"
+            android:layout_above="@id/inputLayout"
+            android:id="@+id/chatRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:visibility="visible" />
+    <!-- </ScrollView>-->
+    <!-- Input Layout -->
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/inputMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/message_background"
+            android:hint="@string/want_to_chitchat"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="text|textMultiLine"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_blue" />
+
+
+        <FrameLayout
+            android:id="@+id/layoutSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/message_background"
+            android:layout_gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/sentBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#00000000"
+                android:padding="8dp"
+                android:src="@drawable/ic_send_2"
+                android:contentDescription="Send Message"
+                />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

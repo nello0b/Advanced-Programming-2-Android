@@ -1,0 +1,59 @@
+/* log-in.css */
+/* Center the form in the middle of the screen */
+.Login {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1faee;
+}
+
+
+.form-login {
+    width: 300px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+/* Optional: Style the form elements */
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    margin-bottom: 10px;
+}
+
+/* Optional: Style the submit button */
+.btn-primary {
+    width: 100%;
+}
+
+/* Custom logo styles */
+.custom-logo {
+    max-width: 310px;
+    max-height: 310px;
+}
+
+/* Custom label styles */
+.custom-label {
+    color: #457b9d;
+    /* Set label color */
+}
+
+/* Custom link styles */
+.custom-link {
+    text-decoration: underline;
+    color: #457B9D;
+    /* Set link color */
+}
+
+#logo {
+    filter: drop-shadow(0 0 0.75rem #fff);
+}
+
+.error-span {
+    color: red;
+    font-weight: bold;
+}

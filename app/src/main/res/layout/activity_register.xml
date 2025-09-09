@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/custom_action_bar_main"
+        android:id="@+id/action_bar"/>
+
+    <ScrollView
+        android:layout_below="@id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/background">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textColor"
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:text="Register"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edRegUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/light_blue"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="20dp"
+                android:hint="Username"
+                android:padding="20dp"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/dark_blue" />
+
+            <EditText
+                android:id="@+id/edRegPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edRegUsername"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/light_blue"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="20dp"
+                android:hint="Password"
+                android:padding="20dp"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/dark_blue"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/edRegDisplayName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edRegPassword"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/light_blue"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="20dp"
+                android:hint="Display Name"
+                android:padding="20dp"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/dark_blue"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/upload_image_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edRegDisplayName"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/light_blue"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/primaryButton"
+                    android:id="@+id/btnRegProfilePic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_upload"
+                    android:drawablePadding="20dp"
+                    android:text="Upload" />
+
+                <ImageView
+                    android:id="@+id/ivProfilePic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/placeholder" />
+            </LinearLayout>
+
+            <Button
+                style="@style/secondaryButton"
+                android:id="@+id/btnRegister"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/upload_image_group"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Register"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
