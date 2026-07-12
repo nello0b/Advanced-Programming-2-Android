@@ -1,4 +1,4 @@
-# Advanced-Programming-2-Android
+# ChitChat - Web & Android Chat App and Website
 
 Welcome to ChitChat, our last assignment chat website/app.
 
